@@ -1,0 +1,3 @@
+baseURL = 'https://doctura.github.io.git/'
+languageCode = 'en-us'
+title = 'doctura'
