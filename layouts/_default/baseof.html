@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ .Site.Title | markdownify }}</title>
-</head>
-<body>
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body>
+    {{ partial "header" . }}
     {{ block "main" . }}{{ end }}
-</body>
+    {{ partial "footer" . }}
+  </body>
 </html>
