@@ -1,4 +1,5 @@
 {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
-{{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}
-<link rel="preload" href="{{ $style.RelPermalink }}" as="style">
-<link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.integrity }}">
+{{ $baseStyle := resources.Get "scss/base.scss" | resources.ToCSS $options }}
+{{ $layoutStyle := resources.Get "scss/layout.scss" | resources.ToCSS $options }}
+<link rel="preload" href="{{ $baseStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $baseStyle.Data.integrity }}">
+<link rel="preload" href="{{ $layoutStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $layoutStyle.Data.integrity }}">
