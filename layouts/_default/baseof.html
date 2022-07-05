@@ -4,8 +4,9 @@
     {{ partial "head" . }}
   </head>
   <body>
-    {{ partial "header" . }}
+    {{ partial "site-header" . }}
     {{ block "main" . }}{{ end }}
-    {{ partial "footer" . }}
+    {{ partial "site-footer" . }}
+    {{ partial "scripts" . }}
   </body>
 </html>

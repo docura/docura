@@ -1,0 +1,41 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  width: 260px;
+  left: -260px;
+  height: 100%;
+  transition: .4s;
+  z-index: 200;
+  overflow-x: auto;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.offcanvas-sidebar-on #sidebar {
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1023px) {
+  #toc {
+    position: fixed;
+    top: 0;
+    width: 260px;
+    right: -260px;
+    height: 100%;
+    transition: .4s;
+    z-index: 300;
+    overflow-x: auto;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+  }
+
+  .offcanvas-toc-on #toc {
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+  }
+}

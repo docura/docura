@@ -1,0 +1,57 @@
+.icon {
+  font-family: 'Material Icons Two Tone';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.icon-facebook {
+  fill: #1877f2;
+}
+
+.icon-twitter {
+  fill: #1d9bf0;
+}
+
+.icon-youtube {
+  fill: #ff0000;
+}
+
+.icon-github {
+  fill: #24292f;
+}
+
+.icon-github-sponsor {
+  padding: 5px 10px;
+  border: 1px solid #d5d7da;
+  color: #576060;
+  background: #f6f8fa;
+  border-radius: 6px;
+}
+
+.icon-github-sponsor-heart {
+  fill: #bf3989;
+}
+
+@media (min-width: 768px) {
+  .icon {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .icon {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,3 @@
+{{ $mainJs := resources.Get "js/main.js" | resources.Minify }}
+
+<script type="text/javascript" src="{{ $mainJs.RelPermalink }}"></script>

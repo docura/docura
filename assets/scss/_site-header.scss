@@ -1,0 +1,68 @@
+#site-header-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#site-header-brand a {
+  padding: 12px;
+}
+
+#site-header-menu {
+  width: 100%;
+  overflow: auto;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+#site-header-menu ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 12px;
+}
+
+#site-header-menu a {
+  display: flex;
+  padding: 12px 6px;
+}
+
+#site-header-menu a:focus, #site-header-menu a:hover, #site-header-menu a.active {
+  border-bottom: 3px solid;
+}
+
+#site-header-controls {
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+  justify-content: flex-end;
+  gap: 12px
+}
+
+#site-header-search {
+  display: flex;
+  align-items: center;
+}
+
+#site-header-search > button {
+  width: 100%;
+  padding: 6px;
+  margin: 0 12px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#site-header-search > button > .icon {
+  padding: 0 10px;
+}
+
+@media (min-width: 1024px) {
+  #site-header-search > button {
+    margin: 0;
+  }
+}

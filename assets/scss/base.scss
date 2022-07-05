@@ -1,9 +1,16 @@
-/* normalize */
-/* --------- */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+/*!
+ * Doctura (https://doctura.github.io/)
+ * Copyright 2022 Dumindu Madunuwan
+ * Licensed under the MIT License.
+ */
 
-body {
-  margin: 0;
-}
+@import "reset";
+@import "layout";
+
+@import "site-header";
+@import "site-footer";
+@import "article";
+@import "sidebar";
+@import "toc";
+@import "icons";
+@import "dropdown";

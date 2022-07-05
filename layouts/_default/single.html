@@ -3,9 +3,11 @@
   {{ partial "sidebar" . }}
   <main>
     <article id="article">
+      {{ partial "article-header" . }}
       {{ .Content }}
+      {{ partial "article-footer" . }}
     </article>
-    <aside id="toc"></aside>
+    {{ partial "toc" . }}
   </main>
 </div>
 {{ end }}

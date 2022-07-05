@@ -1,12 +1,10 @@
 {{ define "main" }}
 <div id="site-main-content-wrapper">
-  {{ partial "sidebar" . }}
   <main>
     <article id="article">
       <p>Hello Doctura!</p>
       {{ .Content }}
     </article>
-    <aside id="toc"></aside>
   </main>
 </div>
 {{ end }}

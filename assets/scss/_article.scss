@@ -1,0 +1,222 @@
+#article {
+  padding: 40px 20px;
+}
+
+#article-header {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+#article-content .highlight,
+#article-content blockquote,
+#article-content dl,
+#article-content iframe,
+#article-content ol,
+#article-content p,
+#article-content table,
+#article-content ul {
+  margin: 1.6em 0 .1em
+}
+
+#article-content blockquote p {
+  margin: 1em 0
+}
+
+#article-content blockquote dl,
+#article-content blockquote ol,
+#article-content blockquote ul {
+  margin: 0 1em 1em 1em
+}
+
+#article-content h1 {
+  font-size: 2em
+}
+
+#article-content h2 {
+  font-size: 1.5em
+}
+
+#article-content h3 {
+  font-size: 1.3em
+}
+
+#article-content h4 {
+  font-size: 1.1em
+}
+
+#article-content h1,
+#article-content h2,
+#article-content h3,
+#article-content h4,
+#article-content h5,
+#article-content h6 {
+  line-height: 1em;
+  font-weight: 500;
+  margin: 1.6em 0 .1em
+}
+
+#article-content a {
+  color: #328ac1;
+  text-decoration: none
+}
+
+#article-content a:hover {
+  color: #4b9dd0;
+  text-decoration: underline
+}
+
+@media print {
+  #article-content a {
+    color: #355265;
+    text-decoration: underline
+  }
+
+  #article-content a:after {
+    content: " (" attr(href) ")";
+    font-size: 80%
+  }
+}
+
+#article-content strong, #article-content b, #article-content table th {
+  font-weight: 700
+}
+
+#article-content em {
+  font-style: italic
+}
+
+#article-content dl,
+#article-content ol,
+#article-content ul {
+  margin-left: 20px
+}
+
+#article-content dl dl,
+#article-content dl ol,
+#article-content dl ul,
+#article-content ol dl,
+#article-content ol ol,
+#article-content ol ul,
+#article-content ul dl,
+#article-content ul ol,
+#article-content ul ul {
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+#article-content ul {
+  list-style: disc
+}
+
+#article-content ol {
+  list-style: decimal
+}
+
+#article-content dl {
+  list-style: square
+}
+
+#article-content li > ul {
+  list-style: circle
+}
+
+#article-content li p {
+  margin: 0
+}
+
+#article-content li .highlight,
+#article-content li blockquote,
+#article-content li iframe,
+#article-content li table {
+  margin: 1em 0
+}
+
+#article-content img,
+#article-content video {
+  max-width: 100%
+}
+
+#article-content blockquote {
+  padding: 0 20px;
+  position: relative;
+  border: 1px solid #e3e3e3;
+  border-left: 5px solid #ddd
+}
+
+#article-content blockquote footer {
+  margin: 1em 0;
+  font-style: italic
+}
+
+#article-content blockquote footer cite:before {
+  content: "—";
+  padding: 0 .3em
+}
+
+#article-content blockquote footer cite a {
+  color: grey;
+}
+
+#article-content table {
+  max-width: 100%;
+  border: 1px solid #e3e3e3
+}
+
+#article-content table td,
+#article-content table th {
+  padding: 5px 15px
+}
+
+#article-content table tr:nth-child(2n) {
+  background: #eee
+}
+
+#article-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+}
+
+#article-last-updated, #article-prev-link, #article-next-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 1.2em;
+}
+
+#article-last-updated {
+  grid-column: 1 / 3;
+  justify-content: center;
+}
+
+#article-next-link {
+  justify-content: flex-end;
+}
+
+#article-prev-link .icon {
+  padding-right: 6px;
+}
+
+#article-next-link .icon {
+  padding-left: 6px;
+}
+
+@media (min-width: 768px) {
+  #article-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #article-prev-link {
+    grid-column: 1/ 2;
+    grid-row: 1;
+  }
+
+  #article-last-updated {
+    grid-column: 2 / 3;
+  }
+
+  #article-next-link {
+    grid-column: 3 / 4;
+  }
+}

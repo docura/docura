@@ -1,3 +1,5 @@
+@import "variables";
+
 body {
   display: flex;
   flex-direction: column;
@@ -7,7 +9,7 @@ body {
 #site-header {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 46px);
+  grid-template-rows: repeat(3, var(--site-header-height));
 }
 
 #site-header-menu, #site-header-search {
@@ -16,8 +18,8 @@ body {
 
 #site-footer {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 46px);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, var(--site-footer-height));
 }
 
 #site-footer-copyright, #site-footer-love {
@@ -43,11 +45,11 @@ main {
   flex: 1;
 }
 
-/* ipad */
+/* ipad mini */
 @media (min-width: 768px) and (max-width: 1024px) {
   #site-header {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 46px);
+    grid-template-rows: repeat(2, var(--site-header-height));
   }
 
   #site-header-brand {
@@ -67,34 +69,34 @@ main {
   }
 
   #site-footer {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 46px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, var(--site-footer-height));
   }
 
   #site-footer-social {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
   }
 
   #site-footer-fund {
-    grid-column: 6 / 7;
+    grid-column: 3 / 4;
   }
 
   #site-footer-copyright {
-    grid-column: 3 / 5;
+    grid-column: 2 / 3;
     grid-row: 1;
   }
 
   #site-footer-love {
-    grid-column: 1 / 7;
+    grid-column: 1 / 4;
   }
 }
 
-/* ipad pro portrait*/
+/* ipad pro portrait */
 @media (min-width: 1025px) and (max-width: 1280px),
 (min-width: 1024px) and (max-width: 1280px) and (orientation: portrait) {
   #site-header {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 46px;
+    grid-template-rows: var(--site-header-height-md);
   }
 
   #site-header-brand {
@@ -117,7 +119,7 @@ main {
 
   #site-footer {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 46px;
+    grid-template-rows: var(--site-footer-height-md);
   }
 
   #site-footer-social {
@@ -141,6 +143,7 @@ main {
   #toc {
     width: 25%;
     display: flex;
+    flex-direction: column;
   }
 }
 
@@ -148,7 +151,7 @@ main {
 @media (min-width: 1281px) {
   #site-header {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 46px;
+    grid-template-rows: var(--site-header-height-lg);
   }
 
   #site-header-brand {
@@ -171,7 +174,7 @@ main {
 
   #site-footer {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 46px;
+    grid-template-rows: var(--site-footer-height-lg);
   }
 
   #site-footer-social {
@@ -195,11 +198,13 @@ main {
   #sidebar {
     width: 16.7%;
     display: flex;
+    flex-direction: column;
   }
 
   #toc {
     width: 20%;
     display: flex;
+    flex-direction: column;
   }
 }
 
