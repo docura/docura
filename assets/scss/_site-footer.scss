@@ -6,11 +6,6 @@
   align-items: center;
 }
 
-#site-footer-social a {
-  display: flex;
-  align-items: center;
-}
-
 #site-footer-fund {
   display: flex;
   gap: 12px;
@@ -20,19 +15,15 @@
   align-items: center;
 }
 
-#site-footer-fund a {
-  display: flex;
-  align-items: center;
-}
-
 #site-footer-copyright, #site-footer-love {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#site-footer-love .icon {
-  padding: 0 6px;
+#site-footer-copyright a {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 1025px), (min-width: 1024px) and (orientation: portrait) {

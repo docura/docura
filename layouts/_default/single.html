@@ -4,7 +4,9 @@
   <main>
     <article id="article">
       {{ partial "article-header" . }}
-      {{ .Content }}
+      <div id="article-content">
+        {{ .Content }}
+      </div>
       {{ partial "article-footer" . }}
     </article>
     {{ partial "toc" . }}

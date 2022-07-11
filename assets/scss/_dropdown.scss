@@ -41,10 +41,14 @@
 
 .dropdown-menu button, .dropdown-menu a {
   padding: 6px;
-  display: block;
+  display: flex;
   width: 100%;
-  clear: both;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu button .icon {
+  padding-right: 6px;
 }
 
 .dropdown-menu button:hover, .dropdown-menu a:hover {

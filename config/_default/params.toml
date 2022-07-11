@@ -1,2 +1,14 @@
 description = 'The documentation theme for your Hugo project.'
-authors = 'Dumindu Madunuwan'
+
+author = 'Dumindu Madunuwan'
+authorURL = 'https://github.com/dumindu'
+
+facebookURL = ''
+twitterURL = ''
+githubURL = 'https://github.com/doctura/site'
+youtubeURL = ''
+
+githubSponsorURL ='https://github.com/sponsors/dumindu'
+buyMeACoffeeURL = 'https://www.buymeacoffee.com/dumindu'
+
+docturaURL = 'https://doctura.github.io/'
