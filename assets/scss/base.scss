@@ -7,10 +7,11 @@
 @import "reset";
 @import "layout";
 
-@import "site-header";
-@import "site-footer";
-@import "article";
-@import "sidebar";
-@import "toc";
-@import "icons";
-@import "dropdown";
+@import "component/site-header";
+@import "component/site-footer";
+@import "component/article";
+@import "component/sidebar";
+@import "component/toc";
+
+@import "component/button";
+@import "component/dropdown";

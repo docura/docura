@@ -1,54 +1,18 @@
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("/font/Inter-Light.woff2?v=3.19") format("woff2"),
-  url("/font/Inter-Light.woff?v=3.19") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/font/Inter-Regular.woff2?v=3.19") format("woff2"),
-  url("/font/Inter-Regular.woff?v=3.19") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/font/Inter-Italic.woff2?v=3.19") format("woff2"),
-  url("/font/Inter-Italic.woff?v=3.19") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/font/Inter-SemiBold.woff2?v=3.19") format("woff2"),
-  url("/font/Inter-SemiBold.woff?v=3.19") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/font/Inter-SemiBoldItalic.woff2?v=3.19") format("woff2"),
-  url("/font/Inter-SemiBoldItalic.woff?v=3.19") format("woff");
-}
-
-::selection {
-  text-shadow: none;
-  background: rgba(0, 0, 0, 0.1);
-  color: rgba(255, 255, 255, 0.8);
-}
+@import "../font/inter";
+@import "../icon/default";
 
 :root {
   font-family: 'Inter', sans-serif;
+  background: white;
+  color: #333333;
+}
+
+:root[data-color="dark"] {
+  background: #121212;
+  color: #efefef;
+}
+
+:root[data-color="night"] {
+  background: #333333;
+  color: #CCCCCC;
 }

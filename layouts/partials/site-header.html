@@ -8,16 +8,23 @@
   <div id="site-header-controls">
     <!-- theme selector -->
     <div class="dropdown">
-      <button class="dropdown-btn"><span class="icon">brightness_6</span></button>
+      <button class="dropdown-btn">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
       <ul role="menu" class="dropdown-menu">
-        <li role="menuitem"><button><span class="icon">light_mode</span> Light</button></li>
-        <li role="menuitem"><button><span class="icon">dark_mode</span> Dark</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
       </ul>
     </div>
 
     <!-- language selector -->
     <div class="dropdown">
-      <button class="dropdown-btn"><span class="icon">translate</span></button>
+      <button class="dropdown-btn">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
       <ul role="menu" class="dropdown-menu">
         <li role="menuitem"><a href="#">English</a></li>
       </ul>
@@ -37,6 +44,6 @@
 
   <!-- search -->
   <div id="site-header-search">
-    <button><span class="icon">search</span> Search</button>
+    <button><i class="icon icon-search"></i> Search</button>
   </div>
 </header>
