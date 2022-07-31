@@ -26,7 +26,13 @@
         <i class="icon icon-select"></i>
       </button>
       <ul role="menu" class="dropdown-menu">
-        <li role="menuitem"><a href="#">English</a></li>
+        {{ if .IsTranslated }}
+          {{ range .AllTranslations }}
+          <li role="menuitem"><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+          {{ end }}
+        {{ else }}
+          <li role="menuitem"><a href="#">{{ .Language.LanguageName }}</a></li>
+        {{ end }}
       </ul>
     </div>
   </div>
@@ -35,9 +41,9 @@
   <div id="site-header-menu">
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a></li>
+        {{ end }}
       </ul>
     </nav>
   </div>

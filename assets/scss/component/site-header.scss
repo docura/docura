@@ -26,6 +26,7 @@
 #site-header-menu a {
   display: flex;
   padding: 12px 6px;
+  gap: 3px;
 }
 
 #site-header-menu a:focus, #site-header-menu a:hover, #site-header-menu a.active {

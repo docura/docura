@@ -3,25 +3,25 @@
   <div id="site-footer-social">
 
     {{with .Site.Params.facebookURL}}
-    <a href="{{.}}">
+    <a href="{{.}}" target="_blank">
       <i class="icon icon-facebook icon-colored"></i>
     </a>
     {{end}}
 
     {{with .Site.Params.twitterURL}}
-    <a href="{{.}}">
+    <a href="{{.}}" target="_blank">
       <i class="icon icon-twitter icon-colored"></i>
     </a>
     {{end}}
 
     {{with .Site.Params.githubURL}}
-    <a href="{{.}}">
+    <a href="{{.}}" target="_blank">
       <i class="icon icon-github icon-colored"></i>
     </a>
     {{end}}
 
     {{with .Site.Params.youtubeURL}}
-    <a href="{{.}}">
+    <a href="{{.}}" target="_blank">
       <i class="icon icon-youtube icon-colored"></i>
     </a>
     {{end}}
@@ -32,26 +32,26 @@
   <div id="site-footer-fund">
 
     {{with .Site.Params.githubSponsorURL}}
-    <a href="{{.}}" class="btn-github">
+    <a href="{{.}}" class="btn-github" target="_blank">
       <i class="icon icon-github icon-colored"></i> Sponsor
     </a>
     {{end}}
 
     {{with .Site.Params.buyMeACoffeeURL}}
-    <a href="{{.}}" class="btn-buymeacoffee"></a>
+    <a href="{{.}}" class="btn-buymeacoffee" target="_blank"></a>
     {{end}}
 
   </div>
 
   <!-- copyright -->
   <div id="site-footer-copyright">
-    <a href="{{ .Site.Params.authorURL }}">
+    <a href="{{ .Site.Params.authorURL }}" target="_blank">
       <i class="icon icon-copyright"></i> 2022 {{ .Site.Params.author }}
     </a>
   </div>
 
   <!-- love -->
   <div id="site-footer-love">
-    Made with <i class="icon icon-love icon-colored"></i> &amp;&nbsp;<a href="{{ .Site.Params.docturaURL }}">Doctura</a>
+    Made with <i class="icon icon-love icon-colored"></i> &nbsp;from&nbsp;<a href="{{ .Site.Params.docturaURL }}" target="_blank">Doctura</a>
   </div>
 </footer>

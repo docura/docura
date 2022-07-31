@@ -33,5 +33,5 @@ Lorem ipsum dolor
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
-![House On The Cliff by fran silvestre arquitectos, calpe, alicante, spain](https://static.designboom.com/wp-content/uploads/2012/12/houseonthecliff01.jpg)
-Image credit: [Designboom](http://www.designboom.com/architecture/designboom-2012-top-ten-residential-structures/)
+![Colorful galaxy](https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2650&q=80)
+Image credit: [Jeremy Thomas](https://unsplash.com/@jeremythomasphoto)

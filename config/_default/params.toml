@@ -3,7 +3,7 @@ description = 'The documentation theme for your Hugo project.'
 author = 'Dumindu Madunuwan'
 authorURL = 'https://github.com/dumindu'
 
-facebookURL = ''
+facebookURL = 'https://facebook.com/doctura'
 twitterURL = ''
 githubURL = 'https://github.com/doctura/site'
 youtubeURL = ''

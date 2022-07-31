@@ -4,4 +4,6 @@ baseURL = 'https://doctura.github.io/'
 defaultContentLanguage = 'en'
 languageCode = 'en-us'
 
-GoogleAnalytics = 'G-JTX12SV6KT'
+googleAnalytics = 'G-JTX12SV6KT'
+
+enableGitInfo = true
