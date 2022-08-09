@@ -10,8 +10,16 @@
     {{- range $page := $group.pages -}}
       {{- $pageSlug := $page.title | urlize -}}
       {{- $isActivePage := eq $urlPageSlug $pageSlug -}}
-      {{- $href := printf "/%s/%s/%s/" $.Site.Language.Lang $.Section $pageSlug }}
-      <a class="sidebar-link {{ if $isActivePage }}current{{ end }}" href="{{ $href }}">{{ $page.title }}</a>
+
+      {{ if eq .Site.Language.Lang .Site.DefaultContentLanguage }}
+        {{ $href := printf "/%s/%s/" $.Section $pageSlug }}
+        <a class="sidebar-link {{ if $isActivePage }}current{{ end }}" href="{{ $href }}">{{ $page.title }}</a>
+
+      {{ else }}
+        {{ $href := printf "/%s/%s/%s/" $.Site.Language.Lang $.Section $pageSlug }}
+        <a class="sidebar-link {{ if $isActivePage }}current{{ end }}" href="{{ $href }}">{{ $page.title }}</a>
+
+      {{ end}}
     {{- end }}
 
   {{- end }}
