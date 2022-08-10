@@ -3,3 +3,17 @@
 {{ $baseJs := slice $dropdown $colorPreference | resources.Concat "js/base.js" | minify }}
 
 <script type="text/javascript" src="{{ $baseJs.RelPermalink }}"></script>
+
+{{ $algolia := index .Site.Params.algolia .Site.Language.Lang }}
+{{ if $algolia }}
+  {{ $docsearch := resources.Get "js/component/docsearch.min.js" }}
+  <script src="{{ $docsearch.RelPermalink }}"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '{{ $algolia.container }}',
+          appId: '{{ $algolia.appId }}',
+          indexName: '{{ $algolia.indexName }}',
+          apiKey: '{{ $algolia.apiKey }}',
+      });
+  </script>
+{{ end }}

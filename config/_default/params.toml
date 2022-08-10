@@ -13,3 +13,10 @@ buyMeACoffeeURL = 'https://www.buymeacoffee.com/dumindu'
 
 hugoURL = 'https://gohugo.io/'
 docturaURL = 'https://doctura.github.io/'
+
+[algolia]
+[algolia.en]
+container = '#site-header-search'
+appId = 'doctura'
+indexName = 'doctura'
+apiKey = ''

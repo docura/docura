@@ -6,3 +6,10 @@
 <link rel="preload" href="{{ $baseStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $baseStyle.Data.integrity }}">
 <link rel="preload" href="{{ $mobileFixStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $mobileFixStyle.Data.integrity }}" media="screen and (max-width: 1280px)">
 <link rel="preload" href="{{ $themeStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $themeStyle.Data.integrity }}">
+
+{{ $algolia := index .Site.Params.algolia .Site.Language.Lang }}
+{{ if $algolia }}
+  <link rel="preconnect" href="https://{{ $algolia.appId }}-dsn.algolia.net" crossorigin />
+  {{ $docsearchStyle := resources.Get "scss/component/docsearch.scss" | resources.ToCSS $options }}
+  <link rel="stylesheet" href="{{ $docsearchStyle.RelPermalink }}" integrity="{{ $docsearchStyle.Data.integrity }}"/>
+{{ end }}
