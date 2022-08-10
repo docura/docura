@@ -2,17 +2,20 @@
 @import "../icon/default";
 
 :root {
-  font-family: 'Inter', sans-serif;
-  background: white;
-  color: #333333;
+  --font-family: 'Inter', sans-serif;
+  --background: #ffffff;
+  --color: #333333;
+  --border-color: rgba(0, 0, 0, 0.2);
 }
 
 :root[data-color="dark"] {
-  background: #121212;
-  color: #efefef;
+  --background: #121212;
+  --color: #efefef;
+  --border-color: rgba(255, 255, 255, .4);
 }
 
 :root[data-color="night"] {
-  background: #333333;
-  color: #CCCCCC;
+  --background: #333333;
+  --color: #cccccc;
+  --border-color: rgba(255, 255, 255, 0.2);
 }

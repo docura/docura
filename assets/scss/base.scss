@@ -15,3 +15,9 @@
 
 @import "component/button";
 @import "component/dropdown";
+
+body{
+  font-family: var(--font-family);
+  background: var(--background);
+  color: var(--color);
+}
