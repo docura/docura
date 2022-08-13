@@ -1,10 +1,14 @@
 {{ define "main" }}
 <div id="site-main-content-wrapper">
   <main>
-    <article id="article">
-      <p>Hello Doctura!</p>
-      {{ .Content }}
-    </article>
+    <section class="cover">
+      <h1>{{ .Site.Title }}</h1>
+      <p>{{ .Site.Params.description }}</p>
+
+      {{ with .Site.Params.githubRepo }}
+        {{ partial "github-buttons" . }}
+      {{ end }}
+    </section>
   </main>
 </div>
 {{ end }}

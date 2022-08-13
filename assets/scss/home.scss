@@ -10,15 +10,7 @@
 
 @import "component/site-header";
 @import "component/site-footer";
-@import "component/article";
-@import "component/sidebar";
-@import "component/toc";
+@import "component/home";
 
 @import "component/button";
 @import "component/dropdown";
-
-body{
-  font-family: var(--font-family);
-  background: var(--background);
-  color: var(--color);
-}

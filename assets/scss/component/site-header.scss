@@ -1,7 +1,8 @@
 #site-header-brand {
   display: flex;
   align-items: center;
-  font-size: 1.2em;
+  font-family: var(--font-family-brand);
+  font-size: 1.4em;
 }
 
 #site-header-brand a {

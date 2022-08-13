@@ -1,4 +1,4 @@
-{{ $data := index .Site.Data .Site.Language.Lang .Section "sidebar"}}
+{{ $data := index .Site.Data .Site.Language.Lang .Section "sidebar" }}
 
 {{- $url := split .Permalink "/" -}}
 {{- $urlPageSlug := index $url (sub (len $url) 2) -}}

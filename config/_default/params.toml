@@ -1,13 +1,14 @@
-description = 'The documentation theme for your Hugo project.'
+description = 'The Hugo documentation theme for your next project.'
 
 author = 'Dumindu Madunuwan'
 authorURL = 'https://github.com/dumindu'
 
 facebookURL = 'https://facebook.com/doctura'
-twitterURL = ''
+twitterURL = 'https://www.twitter.com/'
 githubURL = 'https://github.com/doctura/site'
-youtubeURL = ''
+youtubeURL = 'https://www.youtube.com/'
 
+githubRepo = 'doctura/site'
 githubSponsorURL = 'https://github.com/sponsors/dumindu'
 buyMeACoffeeURL = 'https://www.buymeacoffee.com/dumindu'
 

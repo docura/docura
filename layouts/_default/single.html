@@ -1,6 +1,9 @@
 {{ define "main" }}
 <div id="site-main-content-wrapper">
-  {{ partial "sidebar" . }}
+  {{ $dataLocale := index .Site.Data .Site.Language.Lang }}
+  {{ if isset $dataLocale .Section }}
+    {{ partial "sidebar" . }}
+  {{ end }}
   <main>
     <article id="article">
       {{ partial "article-header" . }}

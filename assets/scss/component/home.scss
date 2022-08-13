@@ -1,0 +1,27 @@
+.cover {
+  padding: 40px 20px;
+  width: 100vw;
+  height: calc(100vh/ 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cover h1 {
+  font-family: var(--font-family-brand);
+  font-size: 4em;
+  text-align: center;
+}
+
+.cover p {
+  font-family: var(--font-family-brand);
+  font-size: 2em;
+  text-align: center;
+}
+
+.cover-github-buttons {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}

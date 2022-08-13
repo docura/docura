@@ -1,6 +1,7 @@
-@import "variables";
-
 body {
+  font-family: var(--font-family);
+  background: var(--background);
+  color: var(--color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -96,7 +97,7 @@ main {
 (min-width: 1024px) and (max-width: 1280px) and (orientation: portrait) {
   #site-header {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: var(--site-header-height-md);
+    grid-template-rows: var(--site-header-height);
   }
 
   #site-header-brand {
@@ -119,7 +120,7 @@ main {
 
   #site-footer {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: var(--site-footer-height-md);
+    grid-template-rows: var(--site-footer-height);
   }
 
   #site-footer-social {
@@ -151,7 +152,7 @@ main {
 @media (min-width: 1281px) {
   #site-header {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: var(--site-header-height-lg);
+    grid-template-rows: var(--site-header-height);
   }
 
   #site-header-brand {
@@ -174,7 +175,7 @@ main {
 
   #site-footer {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: var(--site-footer-height-lg);
+    grid-template-rows: var(--site-footer-height);
   }
 
   #site-footer-social {
