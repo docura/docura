@@ -1,11 +1,22 @@
 .cover {
   padding: 40px 20px;
   width: 100vw;
-  height: calc(100vh/ 2);
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: var(--home-cover-background);
+}
+
+.cover::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  z-index: -1;
+  background: inherit;
+  filter: blur(1rem);
 }
 
 .cover h1 {

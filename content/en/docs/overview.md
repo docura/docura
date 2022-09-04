@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Learn more about the team maintaining Doctura, how and why the project started, and how to get involved.
+description: Learn more about the team maintaining Docura, how and why the project started, and how to get involved.
 aliases:
 - "/docs/"
 ---

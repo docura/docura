@@ -27,6 +27,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: doctura/doctura.github.io
+          external_repository: docura/docura.github.io
           publish_branch: main
           publish_dir: ./public

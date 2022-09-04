@@ -1,23 +1,23 @@
-description = 'The Hugo documentation theme for your next project.'
+description = 'A modular Hugo theme to build your next documentation site'
 
 author = 'Dumindu Madunuwan'
 authorURL = 'https://github.com/dumindu'
 
-facebookURL = 'https://facebook.com/doctura'
+facebookURL = 'https://facebook.com/HugoDocura'
 twitterURL = 'https://www.twitter.com/'
-githubURL = 'https://github.com/doctura/site'
+githubURL = 'https://github.com/docura/site'
 youtubeURL = 'https://www.youtube.com/'
 
-githubRepo = 'doctura/site'
+githubRepo = 'docura/site'
 githubSponsorURL = 'https://github.com/sponsors/dumindu'
 buyMeACoffeeURL = 'https://www.buymeacoffee.com/dumindu'
 
 hugoURL = 'https://gohugo.io/'
-docturaURL = 'https://doctura.github.io/'
+docuraURL = 'https://docura.github.io/'
 
 [algolia]
 [algolia.en]
 container = '#site-header-search'
-appId = 'doctura'
-indexName = 'doctura'
+appId = 'docura'
+indexName = 'docura'
 apiKey = ''

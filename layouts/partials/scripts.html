@@ -1,4 +1,4 @@
-{{ $dropdown := resources.Get "js/component/dropbox.js" }}
+{{ $dropdown := resources.Get "js/component/dropdown.js" }}
 {{ $colorPreference := resources.Get "js/component/color-preference.js" }}
 {{ $baseJs := slice $dropdown $colorPreference | resources.Concat "js/base.js" | minify }}
 
