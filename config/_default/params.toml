@@ -1,16 +1,16 @@
 description = 'A modular Hugo theme to build your next documentation site'
 
-author = 'Dumindu Madunuwan'
-authorURL = 'https://github.com/dumindu'
+author = 'Your Name'
+authorURL = 'https://your-site.com/'
 
-facebookURL = 'https://facebook.com/HugoDocura'
+facebookURL = 'https://facebook.com/'
 twitterURL = 'https://www.twitter.com/'
-githubURL = 'https://github.com/docura/site'
+githubURL = 'https://github.com/'
 youtubeURL = 'https://www.youtube.com/'
 
-githubRepo = 'docura/site'
-githubSponsorURL = 'https://github.com/sponsors/dumindu'
-buyMeACoffeeURL = 'https://www.buymeacoffee.com/dumindu'
+githubRepo = 'your/repo'
+githubSponsorURL = 'https://github.com/sponsors/'
+buyMeACoffeeURL = 'https://www.buymeacoffee.com/'
 
 hugoURL = 'https://gohugo.io/'
 docuraURL = 'https://docura.github.io/'
@@ -18,6 +18,6 @@ docuraURL = 'https://docura.github.io/'
 [algolia]
 [algolia.en]
 container = '#site-header-search'
-appId = 'docura'
-indexName = 'docura'
+appId = ''
+indexName = ''
 apiKey = ''

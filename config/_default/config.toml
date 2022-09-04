@@ -4,6 +4,6 @@ baseURL = 'https://docura.github.io/'
 defaultContentLanguage = 'en'
 languageCode = 'en-us'
 
-googleAnalytics = 'G-JTX12SV6KT'
+googleAnalytics = ''
 
 enableGitInfo = true
