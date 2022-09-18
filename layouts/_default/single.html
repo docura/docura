@@ -6,6 +6,7 @@
   {{ end }}
   <main>
     <article id="article">
+      {{ partial "article-nav" . }}
       {{ partial "article-header" . }}
       <div id="article-content">
         {{ .Content }}

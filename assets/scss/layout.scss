@@ -32,7 +32,7 @@ body {
   flex: 1;
 }
 
-#sidebar, #toc {
+#sidebar, #toc, #article-nav, #sidebar .btn-close, #toc .btn-close {
   display: none;
 }
 

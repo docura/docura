@@ -1,6 +1,7 @@
 {{ $dropdown := resources.Get "js/component/dropdown.js" }}
 {{ $colorPreference := resources.Get "js/component/color-preference.js" }}
-{{ $baseJs := slice $dropdown $colorPreference | resources.Concat "js/base.js" | minify }}
+{{ $articleNav := resources.Get "js/component/article-nav.js" }}
+{{ $baseJs := slice $dropdown $colorPreference $articleNav | resources.Concat "js/base.js" | minify }}
 
 <script type="text/javascript" src="{{ $baseJs.RelPermalink }}"></script>
 
