@@ -10,6 +10,8 @@
   {{ $data := index .Site.Data .Site.Language.Lang .Section "sidebar"}}
   {{- $url := split .Permalink "/" -}}
   {{- $urlPageSlug := index $url (sub (len $url) 2) -}}
+
+  {{ $isSectionIndex := eq $urlPageSlug .Section }}
   {{ $isActivePagePassed := false }}
   {{ $isNextPagePassed := false }}
 
@@ -20,7 +22,7 @@
 
     {{- range $page := $group.pages -}}
       {{- $pageSlug := $page.title | urlize -}}
-      {{- $isActivePage := eq $urlPageSlug $pageSlug -}}
+      {{- $isActivePage := or $isSectionIndex (eq $urlPageSlug $pageSlug) -}}
 
       {{ if $isActivePagePassed }}
         {{ $nextPageTitle = $page.title }}
