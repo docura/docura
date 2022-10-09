@@ -7,3 +7,5 @@ languageCode = 'en-us'
 googleAnalytics = ''
 
 enableGitInfo = true
+
+markup.highlight.noClasses = false

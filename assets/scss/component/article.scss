@@ -15,7 +15,7 @@
 #article-content h6 {
   line-height: 1em;
   font-weight: 300;
-  margin: 1.6em 0 .1em
+  margin: 2.6em 0 .1em
 }
 
 #article-content h1 {
@@ -42,7 +42,8 @@
 #article-content p,
 #article-content table,
 #article-content ul {
-  margin: 1.6em 0 .1em
+  margin: 1.6em 0 .1em;
+  line-height: 1.8;
 }
 
 #article-content blockquote p {
@@ -137,10 +138,11 @@
 }
 
 #article-content blockquote {
-  padding: 0 20px;
+  padding: 8px 12px;
   position: relative;
-  border: 1px solid #e3e3e3;
-  border-left: 5px solid #ddd
+  background: var(--background-fg);
+  border-left: 4px solid var(--border-color);
+  border-radius: 6px;
 }
 
 #article-content blockquote footer {
@@ -154,12 +156,39 @@
 }
 
 #article-content blockquote footer cite a {
-  color: grey;
+  color: var(--border-color);
+}
+
+#article-content code, #article-content pre {
+  font-family: var(--font-family-code);
+}
+
+#article-content h1 code,
+#article-content h2 code,
+#article-content h3 code,
+#article-content h4 code,
+#article-content h5 code,
+#article-content h6 code,
+#article-content p code,
+#article-content blockquote code,
+#article-content ul code,
+#article-content ol code,
+#article-content dl code,
+#article-content table code {
+  background: var(--chroma-base00);
+  padding: 4px;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+#article-content blockquote code {
+  background: var(--background-fg2);
+  opacity: .8;
 }
 
 #article-content table {
   max-width: 100%;
-  border: 1px solid #e3e3e3
+  border: 1px solid var(--border-color)
 }
 
 #article-content table td,
@@ -168,7 +197,17 @@
 }
 
 #article-content table tr:nth-child(2n) {
-  background: #eee
+  background: var(--background-fg)
+}
+
+#article-content .highlight {
+  max-width: calc(100vw - 40px);
+  overflow: scroll;
+}
+
+#article-content .highlight pre {
+  max-width: calc(100vw - 40px);
+  line-height: 1.8;
 }
 
 #article-footer {

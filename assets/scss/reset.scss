@@ -1,6 +1,7 @@
 /* https://github.com/elad2412/the-new-css-reset v1.7.2 */
+/* custom styles for: pre, code */
 
-*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+*:where(:not(html, iframe, canvas, img, svg, video, pre, code):not(svg *, symbol *)) {
   all: unset;
   display: revert;
 }
@@ -58,4 +59,8 @@ meter {
 
 :where([draggable="true"]) {
   -webkit-user-drag: element;
+}
+
+pre, code {
+  margin: 0;
 }
