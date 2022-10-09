@@ -200,16 +200,6 @@
   background: var(--background-fg)
 }
 
-#article-content .highlight {
-  max-width: calc(100vw - 40px);
-  overflow: scroll;
-}
-
-#article-content .highlight pre {
-  max-width: calc(100vw - 40px);
-  line-height: 1.8;
-}
-
 #article-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
