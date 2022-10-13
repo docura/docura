@@ -217,3 +217,21 @@ main {
     width: 66.64vw;
   }
 }
+
+@media (min-width: 1920px) {
+  body {
+    zoom: 1.2;
+  }
+}
+
+@media (min-width: 2560px) {
+  body {
+    zoom: 1.6;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 1.8;
+  }
+}

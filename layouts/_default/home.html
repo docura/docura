@@ -3,10 +3,14 @@
   <main>
     <section class="cover">
       <h1>{{ .Site.Title }}</h1>
-      <p>{{ .Site.Params.description }}</p>
+      <h2>{{ .Site.Params.description }}</h2>
 
-      {{ with .Site.Params.githubRepo }}
-        {{ partial "github-buttons" . }}
+      {{ with .Site.Params.githubRepos }}
+        {{ partial "github-repos-grid" . }}
+      {{ else }}
+        {{ with .Site.Params.githubRepo }}
+          {{ partial "github-buttons" . }}
+        {{ end }}
       {{ end }}
     </section>
   </main>

@@ -21,3 +21,15 @@ container = '#site-header-search'
 appId = ''
 indexName = ''
 apiKey = ''
+
+#[[githubRepos]]
+#name = 'Website'
+#repo = 'docura/site'
+#icon = "<i class='icon icon-book'></i>"
+#description = 'The repository of the website.'
+#
+#[[githubRepos]]
+#name = 'Code'
+#repo = 'docura/docura'
+#icon = "<i class='icon icon-theme'></i>"
+#description = 'The repository of the theme.'

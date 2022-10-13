@@ -1,0 +1,17 @@
+<div class="github-repos-grid">
+{{ range . }}
+  <div class="github-repo-tile">
+    <a href="https://github.com/{{.repo}}">
+      <div>{{ .icon | safeHTML }}</div>
+      <h3>{{ .name }}</h3>
+      <p>{{ .description }}</p>
+    </a>
+
+    <div class="github-buttons">
+      <a href="https://github.com/{{.repo}}" class="github-button"  data-icon="octicon-star" data-show-count="true" aria-label="Star {{.repo}} on GitHub">Star</a>
+      <a href="https://github.com/{{.repo}}/fork" class="github-button"  data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork {{.repo}} on GitHub">Fork</a>
+    </div>
+  </div>
+{{ end }}
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</div>

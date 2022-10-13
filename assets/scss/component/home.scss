@@ -25,14 +25,102 @@
   text-align: center;
 }
 
-.cover p {
+.cover h2 {
   font-family: var(--font-family-brand);
   font-size: 2em;
   text-align: center;
 }
 
-.cover-github-buttons {
+.cover h3 {
+  font-family: var(--font-family-brand);
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: .8em;
+}
+
+.cover p {
+  font-size: 1em;
+  padding-top: .8em;
+}
+
+.github-buttons {
   display: flex;
   gap: 10px;
   padding-top: 20px;
+  justify-content: center;
+}
+
+.github-repos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  gap: 4em;
+  width: 100%;
+}
+
+.github-repo-tile {
+  width: 100%;
+}
+
+.github-repo-tile .icon {
+  width: 80px;
+  height: 80px;
+  background-size: 5em;
+}
+
+.github-repo-tile a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .github-repos-grid {
+    flex-direction: row;
+    width: 80%;
+    padding-top: 4em;
+    gap: 0;
+  }
+
+  .github-repo-tile {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .github-repos-grid {
+    width: 60%;
+    padding-top: 6em;
+  }
+
+  .github-repo-tile .icon {
+    width: 100px;
+    height: 100px;
+    background-size: 6.25em;
+  }
+}
+
+@media (min-width: 1281px) {
+  .github-repos-grid {
+    width: 50%;
+  }
+
+  .github-repo-tile .icon {
+    width: 120px;
+    height: 120px;
+    background-size: 7.5em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .github-repos-grid {
+    width: 40%;
+  }
+
+  .github-repo-tile .icon {
+    width: 160px;
+    height: 160px;
+    background-size: 10em;
+  }
 }
