@@ -6,13 +6,14 @@
 {{ $themeStyle := resources.Get "scss/theme/default.scss" | resources.ToCSS $options }}
 
 {{ if .IsHome }}
-<link rel="preload" href="{{ $homeStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $homeStyle.Data.integrity }}">
-{{ else }}
+<link rel="stylesheet" href="{{ $homeStyle.RelPermalink }}" integrity="{{ $homeStyle.Data.integrity }}">
 <link rel="preload" href="{{ $baseStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $baseStyle.Data.integrity }}">
+{{ else }}
+<link rel="stylesheet" href="{{ $baseStyle.RelPermalink }}" integrity="{{ $baseStyle.Data.integrity }}">
 {{ end }}
 
-<link rel="preload" href="{{ $mobileFixStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $mobileFixStyle.Data.integrity }}" media="screen and (max-width: 1280px)">
-<link rel="preload" href="{{ $themeStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $themeStyle.Data.integrity }}">
+<link rel="stylesheet" href="{{ $mobileFixStyle.RelPermalink }}" integrity="{{ $mobileFixStyle.Data.integrity }}" media="screen and (max-width: 1280px)">
+<link rel="stylesheet" href="{{ $themeStyle.RelPermalink }}" integrity="{{ $themeStyle.Data.integrity }}">
 
 {{ $algolia := index .Site.Params.algolia .Site.Language.Lang }}
 {{ if $algolia }}
