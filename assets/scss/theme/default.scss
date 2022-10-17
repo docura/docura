@@ -8,6 +8,7 @@
 
   --background: #ffffff;
   --color: #232323;
+  --color2: #656565;
 
   --background-fg: #f7f7f7;
   --background-fg2: #ebebeb;
@@ -37,6 +38,7 @@
 :root[data-color="dark"] {
   --background: #121212;
   --color: #efefef;
+  --color2: #b3b3b3;
 
   --background-fg: #333333;
   --background-fg2: #1f1f1f;
@@ -64,6 +66,7 @@
 :root[data-color="night"] {
   --background: #333333;
   --color: #cccccc;
+  --color2: #9d9d9d;
 
   --background-fg: #444444;
   --background-fg2: #303030;

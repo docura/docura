@@ -13,4 +13,9 @@
 
 .sidebar-link {
   padding-left: 10px;
+  color: var(--color2);
+}
+
+.sidebar-link:hover {
+  color: var(--color);
 }
