@@ -42,7 +42,7 @@
 #article-content p,
 #article-content table,
 #article-content ul {
-  margin: 1.6em 0 .1em;
+  margin-top: 1em;
   line-height: 1.8;
   letter-spacing: -.1px;
 }
@@ -180,6 +180,18 @@
   padding: 4px;
   border-radius: 4px;
   font-size: .9em;
+}
+
+#article-content pre:not(.chroma) {
+  color: var(--chroma-base05);
+  font-size: .9em;
+  line-height: 1.8;
+  letter-spacing: -.1px;
+  background-color: var(--chroma-base00);
+  border-radius: 6px;
+  padding: 16px 24px;
+  overflow-x: auto;
+  margin-top: 1em;
 }
 
 #article-content blockquote code {

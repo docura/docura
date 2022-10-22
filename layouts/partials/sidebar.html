@@ -4,7 +4,7 @@
 {{- $urlPageSlug := index $url (sub (len $url) 2) -}}
 
 <aside id="sidebar">
-  <a class="btn-close"><i class="icon icon-close"></i></a>
+  <span class="btn-close"><i class="icon icon-close"></i></span>
   {{- range $group := $data -}}
     <strong class="sidebar-section">{{ $group.title }}</strong>
 

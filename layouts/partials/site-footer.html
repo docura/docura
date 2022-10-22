@@ -3,25 +3,25 @@
   <div id="site-footer-social">
 
     {{with .Site.Params.facebookURL}}
-    <a href="{{.}}" target="_blank">
+    <a href="{{.}}" target="_blank" aria-label="facebook url">
       <i class="icon icon-facebook icon-colored"></i>
     </a>
     {{end}}
 
     {{with .Site.Params.twitterURL}}
-    <a href="{{.}}" target="_blank">
+    <a href="{{.}}" target="_blank" aria-label="twitter url">
       <i class="icon icon-twitter icon-colored"></i>
     </a>
     {{end}}
 
     {{with .Site.Params.githubURL}}
-    <a href="{{.}}" target="_blank">
+    <a href="{{.}}" target="_blank" aria-label="github url">
       <i class="icon icon-github icon-colored"></i>
     </a>
     {{end}}
 
     {{with .Site.Params.youtubeURL}}
-    <a href="{{.}}" target="_blank">
+    <a href="{{.}}" target="_blank" aria-label="youtube url">
       <i class="icon icon-youtube icon-colored"></i>
     </a>
     {{end}}
@@ -32,13 +32,13 @@
   <div id="site-footer-fund">
 
     {{with .Site.Params.githubSponsorURL}}
-    <a href="{{.}}" class="btn-github" target="_blank">
+    <a href="{{.}}" class="btn-github" target="_blank" aria-label="github sponsor url">
       <i class="icon icon-github icon-colored"></i> Sponsor
     </a>
     {{end}}
 
     {{with .Site.Params.buyMeACoffeeURL}}
-    <a href="{{.}}" class="btn-buymeacoffee" target="_blank"></a>
+    <a href="{{.}}" class="btn-buymeacoffee" target="_blank" aria-label="buy me a coffee url"></a>
     {{end}}
 
   </div>

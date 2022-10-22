@@ -4,7 +4,7 @@
 
 #toc strong {
   font-weight: 600;
-  padding: 7px 10px;
+  padding: 7px 10px 7px 0;
   display: inline-block;
 }
 
@@ -19,5 +19,7 @@
 }
 
 #toc ul ul {
-  padding-left: 1em;
+  margin-left: .7em;
+  padding-left: .3em;
+  border-left: 1px solid var(--border-color);
 }
