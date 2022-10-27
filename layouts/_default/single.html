@@ -9,7 +9,9 @@
       {{ partial "article-nav" . }}
       {{ partial "article-header" . }}
       <div id="article-content">
-        {{ .Content }}
+        {{ $content := .Content }}
+        {{ $content = replaceRE `<a href="(https?://.+)">` `<a href="$1" target="_blank">` $content | safeHTML }}
+        {{ $content | safeHTML }}
       </div>
       {{ partial "article-footer" . }}
     </article>

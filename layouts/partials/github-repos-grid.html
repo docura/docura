@@ -1,7 +1,7 @@
 <div class="github-repos-grid">
 {{ range . }}
   <div class="github-repo-tile">
-    <a href="https://github.com/{{.repo}}">
+    <a href="https://github.com/{{.repo}}" target="_blank">
       <div>{{ .icon | safeHTML }}</div>
       <h3>{{ .name }}</h3>
       <p>{{ .description }}</p>

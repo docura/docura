@@ -5,6 +5,7 @@
 #article-header {
   font-size: 2em;
   font-weight: 400;
+  margin-bottom: 1em;
 }
 
 #article-content h1,
@@ -197,6 +198,15 @@
 #article-content blockquote code {
   background: var(--background-fg2);
   opacity: .8;
+}
+
+#article-content blockquote .chroma, #article-content blockquote pre:not(.chroma) {
+  background: var(--background-fg2);
+  margin-bottom: 1em;
+}
+
+#article-content blockquote .chroma code, #article-content blockquote pre:not(.chroma) code {
+  padding: 0;
 }
 
 #article-content table {
