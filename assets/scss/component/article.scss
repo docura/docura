@@ -252,6 +252,12 @@
   padding-left: 6px;
 }
 
+@media (max-width: 767px) {
+  #article-next-link[data-first-page="true"] {
+    grid-column: 2/ 3;
+  }
+}
+
 @media (min-width: 768px) {
   #article {
     padding: 16px 24px;

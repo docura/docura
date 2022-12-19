@@ -61,6 +61,6 @@
   {{ end }}
 
   {{ if ne $nextPageHref "" }}
-    <a id="article-next-link" href="{{ $nextPageHref }}">Next <i class="icon icon-next"></i></a>
+    <a id="article-next-link" {{ if eq $prevPageHref "" }} data-first-page=true {{ end }} href="{{ $nextPageHref }}">Next <i class="icon icon-next"></i></a>
   {{ end }}
 </footer>
