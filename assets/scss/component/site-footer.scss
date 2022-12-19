@@ -26,9 +26,15 @@
   align-items: center;
 }
 
-@media (min-width: 1025px), (min-width: 1024px) and (orientation: portrait) {
+/* From Small Tablet */
+@media (min-width: 768px) {
   #site-footer-copyright {
     justify-content: flex-start;
     padding-left: 12px;
+  }
+
+  #site-footer-social {
+    justify-content: flex-end;
+    padding-right: 12px;
   }
 }

@@ -1,4 +1,11 @@
 <footer id="site-footer">
+  <!-- copyright -->
+  <div id="site-footer-copyright">
+    <a href="{{ .Site.Params.authorURL }}" target="_blank">
+      <i class="icon icon-copyright"></i> 2022 {{ .Site.Params.author }}
+    </a>
+  </div>
+
   <!-- social -->
   <div id="site-footer-social">
 
@@ -43,15 +50,8 @@
 
   </div>
 
-  <!-- copyright -->
-  <div id="site-footer-copyright">
-    <a href="{{ .Site.Params.authorURL }}" target="_blank">
-      <i class="icon icon-copyright"></i> 2022 {{ .Site.Params.author }}
-    </a>
-  </div>
-
   <!-- love -->
   <div id="site-footer-love">
-    Made with <i class="icon icon-love icon-colored"></i> &nbsp;from&nbsp;<a href="{{ .Site.Params.docuraURL }}" target="_blank">Docura</a>&nbsp;&amp;&nbsp;<a href="{{ .Site.Params.hugoURL }}" target="_blank">Hugo</a>
+    Made with <i class="icon icon-love icon-colored"></i> &nbsp;from&nbsp;<a href="https://docura.github.io/" target="_blank">Docura</a>
   </div>
 </footer>

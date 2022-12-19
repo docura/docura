@@ -12,9 +12,6 @@ githubRepo = 'your/repo'
 githubSponsorURL = 'https://github.com/sponsors/'
 buyMeACoffeeURL = 'https://www.buymeacoffee.com/'
 
-hugoURL = 'https://gohugo.io/'
-docuraURL = 'https://docura.github.io/'
-
 [algolia]
 [algolia.en]
 container = '#site-header-search'
