@@ -17,5 +17,17 @@
 }
 
 .sidebar-link:hover {
-  color: var(--color);
+  color: var(--color-hover);
+  font-weight: 600;
+  font-size: 98%;
+}
+
+.sidebar-link.current {
+  border-left: 3px solid var(--color-anchor);
+  border-radius: 5px;
+  position: relative;
+  left: -3px;
+  color: var(--color-anchor);
+  font-weight: 600;
+  font-size: 98%;
 }

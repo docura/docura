@@ -15,7 +15,9 @@
 }
 
 #toc ul a:hover {
-  color: var(--color);
+  color: var(--color-hover);
+  font-weight: 600;
+  font-size: 98%;
 }
 
 #toc ul ul {

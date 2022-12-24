@@ -59,12 +59,12 @@
 }
 
 #article-content a {
-  color: #328ac1;
+  color: var(--color-anchor);
   text-decoration: none
 }
 
 #article-content a:hover {
-  color: #4b9dd0;
+  color: var(--color-hover);
   text-decoration: underline
 }
 
@@ -238,6 +238,17 @@
 #article-last-updated {
   grid-column: 1 / 3;
   justify-content: center;
+  color: var(--color2);
+}
+
+#article-prev-link, #article-next-link {
+  color: var(--color-anchor);
+}
+
+#article-prev-link:hover, #article-next-link:hover {
+  color: var(--color-hover);
+  font-weight: 600;
+  font-size: 98%;
 }
 
 #article-next-link {
