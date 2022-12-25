@@ -57,10 +57,10 @@
   <time id="article-last-updated" datetime="{{ $lastMod }}"><i class="icon icon-calendar"></i>&nbsp;Last updated: {{ $lastMod }}</time>
 
   {{ if ne $prevPageHref "" }}
-    <a id="article-prev-link" href="{{ $prevPageHref }}"><i class="icon icon-prev"></i> Prev</a>
+    <a id="article-prev-link" href="{{ $prevPageHref }}"><i class="icon icon-prev icon-colored"></i> Prev</a>
   {{ end }}
 
   {{ if ne $nextPageHref "" }}
-    <a id="article-next-link" {{ if eq $prevPageHref "" }} data-first-page=true {{ end }} href="{{ $nextPageHref }}">Next <i class="icon icon-next"></i></a>
+    <a id="article-next-link" {{ if eq $prevPageHref "" }} data-first-page=true {{ end }} href="{{ $nextPageHref }}">Next <i class="icon icon-next icon-colored"></i></a>
   {{ end }}
 </footer>
