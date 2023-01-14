@@ -5,7 +5,7 @@
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
 /* LineHighlight */ .chroma .hl { display: block; width: 100%; background-color: var(--chroma-base02) }
 /* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
-/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; border-right: 1px solid var(--chroma-base0A); }
 /* Line */ .chroma .line { display: flex; }
 /* Keyword */ .chroma .k { color: var(--chroma-base0E) }
 /* KeywordConstant */ .chroma .kc { color: var(--chroma-base0E) }
@@ -80,4 +80,4 @@
 /* GenericSubheading */ .chroma .gu { color: var(--chroma-base0D) }
 /* GenericTraceback */ .chroma .gt { color: var(--chroma-base05) }
 /* GenericUnderline */ .chroma .gl { color: var(--chroma-base05); text-decoration: underline }
-/* TextWhitespace */ .chroma .w { color: var(--chroma-base00); text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: var(--chroma-base00); }
