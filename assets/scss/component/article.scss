@@ -123,6 +123,10 @@
   list-style: circle
 }
 
+#article-content li > ol {
+  list-style: lower-alpha
+}
+
 #article-content li p {
   margin: 0
 }
@@ -136,7 +140,8 @@
 
 #article-content img,
 #article-content video {
-  max-width: 100%
+  max-width: 100%;
+  border-radius: 4px
 }
 
 #article-content blockquote {
