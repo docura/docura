@@ -14,6 +14,20 @@
 .sidebar-link {
   padding-left: 10px;
   color: var(--color2);
+  border-left: 1px solid var(--border-color);
+  margin-left: 4px;
+}
+
+.sidebar-link::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--border-color);
+  border-radius: 50%;
+  position: relative;
+  left: -13.5px;
+  top: -3px;
 }
 
 .sidebar-link:hover {
@@ -23,11 +37,11 @@
 }
 
 .sidebar-link.current {
-  border-left: 3px solid var(--color-anchor);
-  border-radius: 5px;
-  position: relative;
-  left: -3px;
   color: var(--color-anchor);
   font-weight: 600;
   font-size: 98%;
+}
+
+.sidebar-link.current::before, .sidebar-link:hover::before {
+  background: var(--color-anchor);
 }
