@@ -7,13 +7,16 @@
   justify-content: center;
   flex-direction: column;
   background: var(--home-cover-background);
+  position: relative;
 }
 
 .cover::after {
   content: "";
   position: absolute;
-  width: inherit;
-  height: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: -1;
   background: inherit;
   filter: blur(1rem);
