@@ -9,3 +9,21 @@ if (fromLargeTablet && tocSticky) {
         }
     });
 }
+
+function updateActiveClasses() {
+    const headers = document.querySelectorAll('#article h2, #article h3');
+    const links = document.querySelectorAll('#TableOfContents a');
+
+    for (let i = 0; i < headers.length; i++) {
+        const rect = headers[i].getBoundingClientRect();
+
+        if (rect.top >= 0 && rect.top <= window.innerHeight) {
+            links[i].classList.add('active');
+        } else {
+            links[i].classList.remove('active');
+        }
+    }
+}
+window.addEventListener('load', updateActiveClasses);
+window.addEventListener('resize', updateActiveClasses);
+window.addEventListener('scroll', updateActiveClasses);

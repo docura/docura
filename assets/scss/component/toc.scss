@@ -8,20 +8,39 @@
   display: inline-block;
 }
 
+#toc ul {
+  margin-left: .3em;
+  border-left: 1px solid var(--border-color);
+}
+
+#toc ul ul {
+  margin-left: 1em;
+}
+
 #toc ul a {
   display: inline-block;
-  padding: 7px 10px;
+  padding: 7px;
   color: var(--color2);
 }
 
-#toc ul a:hover {
+#toc ul a.active, #toc ul a:hover {
   color: var(--color-hover);
   font-weight: 600;
   font-size: 98%;
 }
 
-#toc ul ul {
-  margin-left: .7em;
-  padding-left: .3em;
-  border-left: 1px solid var(--border-color);
+#toc ul a::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--border-color);
+  position: relative;
+  left: -10.5px;
+  top: -3px;
 }
+
+#toc ul a.active::before, #toc ul a:hover::before {
+  background: var(--color-hover);
+}
+
