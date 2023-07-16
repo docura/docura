@@ -5,7 +5,10 @@
 #toc strong {
   font-weight: 600;
   padding: 7px 10px 7px 0;
-  display: inline-block;
+  display: flex;
+  gap: 3px;
+  position: relative;
+  left: -3px;
 }
 
 #toc ul {
