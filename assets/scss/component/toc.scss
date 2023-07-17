@@ -9,6 +9,7 @@
   gap: 3px;
   position: relative;
   left: -3px;
+  color: var(--color2)
 }
 
 #toc ul {
@@ -23,7 +24,7 @@
 #toc ul a {
   display: inline-block;
   padding: 7px;
-  color: var(--color2);
+  color: var(--color3);
 }
 
 #toc ul a.active, #toc ul a:hover {
