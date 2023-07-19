@@ -96,3 +96,15 @@
   --chroma-base0E: #9b859d;
   --chroma-base0F: #9b703f;
 }
+
+:root[data-color="light"] .icon:not(.icon-colored) {
+  filter: invert(30%) sepia(24%) saturate(758%) hue-rotate(160deg) brightness(89%) contrast(90%);
+}
+
+:root[data-color="dark"] .icon:not(.icon-colored) {
+  filter: invert(97%) sepia(0%) saturate(3231%) hue-rotate(294deg) brightness(118%) contrast(87%);
+}
+
+:root[data-color="night"] .icon:not(.icon-colored) {
+  filter: invert(100%) sepia(2%) saturate(1090%) hue-rotate(294deg) brightness(83%) contrast(92%);
+}
