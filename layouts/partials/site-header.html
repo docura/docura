@@ -41,8 +41,11 @@
   <div id="site-header-menu">
     <nav>
       <ul>
+        {{ $currentPageURL := .Permalink }}
+        {{ $isHomePage := eq $currentPageURL ($.Site.BaseURL | absLangURL) }}
         {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a></li>
+          {{ $isActive := or (and (eq .URL "/") $isHomePage) (and (ne .URL "/") (in $currentPageURL .URL)) }}
+          <li><a href="{{ .URL }}" {{ if $isActive }} class="active"{{ end }}>{{ .Pre }}{{ .Name }}</a></li>
         {{ end }}
       </ul>
     </nav>
