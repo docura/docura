@@ -1,4 +1,4 @@
-# 📖🎨 Docura
+# 🦄 Docura
 > A modular Hugo theme to build your next documentation site
 
 # Getting Started
