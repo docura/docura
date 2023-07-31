@@ -3,6 +3,9 @@ description = 'A modular Hugo theme to build your next documentation site'
 author = 'Your Name'
 authorURL = 'https://your-site.com/'
 
+currentYear = 2023
+# projectStartYear = 2020
+
 facebookURL = 'https://facebook.com/'
 twitterURL = 'https://www.twitter.com/'
 githubURL = 'https://github.com/'

@@ -2,7 +2,7 @@
   <!-- copyright -->
   <div id="site-footer-copyright">
     <a href="{{ .Site.Params.authorURL }}" target="_blank">
-      <i class="icon icon-copyright"></i> 2022 {{ .Site.Params.author }}
+      <i class="icon icon-copyright"></i> {{ if .Site.Params.projectStartYear }}{{ .Site.Params.projectStartYear }}-{{ end }}{{ .Site.Params.currentYear }} {{ .Site.Params.author }}
     </a>
   </div>
 
