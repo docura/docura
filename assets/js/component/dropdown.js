@@ -6,9 +6,12 @@ dropdowns.forEach(el => {
         let alreadyShown = el.querySelector('.dropdown-menu.show');
 
         document.querySelectorAll(openSelector).forEach(openDropdownEl => openDropdownEl.classList.remove('show'));
+        document.querySelectorAll('.dropdown-btn').forEach(dropdownButtonEl => dropdownButtonEl.classList.remove('arrow'));
 
-        if (!alreadyShown)
+        if (!alreadyShown){
             el.querySelector('.dropdown-menu').classList.toggle('show');
+            el.querySelector('.dropdown-btn').classList.toggle('arrow');
+        }
     })
 });
 
@@ -16,6 +19,8 @@ document.body.addEventListener('click', function (e) {
     let offsetParent = e.target.offsetParent;
     let isDropdownMenu = (offsetParent) ? offsetParent.classList.contains('dropdown') : false;
 
-    if (!isDropdownMenu)
+    if (!isDropdownMenu){
         document.querySelectorAll(openSelector).forEach(el => el.classList.remove('show'));
+        document.querySelectorAll('.dropdown-btn').forEach(dropdownButtonEl => dropdownButtonEl.classList.remove('arrow'));
+    }
 });

@@ -1,5 +1,5 @@
 .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-btn {
@@ -19,18 +19,19 @@
 .dropdown-menu {
   display: none;
   position: absolute;
+  z-index: 3;
+  top: 42px;
   right: 0;
   min-width: 100px;
   max-height: 240px;
   overflow-x: auto;
   border: 1px solid var(--border-color);
   background: white;
-  z-index: 1;
   border-radius: 6px;
   padding: 3px;
 }
 
-.dropdown-menu.show {
+.dropdown-menu.show{
   display: block;
 }
 
@@ -39,9 +40,22 @@
   display: flex;
   gap: 2px;
   padding: 6px;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   cursor: pointer;
+}
+
+.dropdown-btn.arrow:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 35px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 9px solid var(--border-color);
 }
 
 .dropdown-menu button:hover, .dropdown-menu a:hover {
