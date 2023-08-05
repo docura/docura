@@ -219,7 +219,7 @@ main {
     position: fixed;
     top: 0;
     height: 100%;
-    transition: .4s;
+    transition: .3s;
     z-index: 300;
     overflow-x: auto;
     background: var(--background);
@@ -232,7 +232,7 @@ main {
   }
 
   .offcanvas-toc-on #toc {
-    transform: translateX(-100%);
+    animation: slide-in-right .3s forwards;
     display: flex;
     flex-direction: column;
     padding-left: 16px;
@@ -262,7 +262,7 @@ main {
     position: fixed;
     top: 0;
     height: 100%;
-    transition: .4s;
+    transition: .3s;
     z-index: 200;
     overflow-x: auto;
     background: var(--background);
@@ -275,7 +275,7 @@ main {
   }
 
   .offcanvas-sidebar-on #sidebar {
-    transform: translateX(100%);
+    animation: slide-in-left .3s forwards;
     display: flex;
     flex-direction: column;
   }
@@ -304,5 +304,23 @@ main {
     cursor: pointer;
     white-space: nowrap;
     gap: 6px;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
