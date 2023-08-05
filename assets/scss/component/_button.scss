@@ -29,3 +29,10 @@
   border-radius: 6px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
 }
+
+.btn-close {
+  background: var(--background-fg);
+  border: 1px dotted var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
