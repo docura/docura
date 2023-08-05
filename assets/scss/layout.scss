@@ -227,6 +227,10 @@ main {
     backdrop-filter: blur(5px);
   }
 
+  :root[data-color="dark"] #toc, :root[data-color="night"] #toc {
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  }
+
   .offcanvas-toc-on #toc {
     transform: translateX(-100%);
     display: flex;
@@ -264,6 +268,10 @@ main {
     background: var(--background);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
+  }
+
+  :root[data-color="dark"] #sidebar, :root[data-color="night"] #sidebar {
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
   }
 
   .offcanvas-sidebar-on #sidebar {
