@@ -48,6 +48,14 @@
   background: rgba(0, 0, 0, 0.05);
 }
 
+:root[data-color="dark"] .dropdown-menu button:hover, .dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+:root[data-color="night"] .dropdown-menu button:hover, .dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
 :root[data-color="dark"] .dropdown-menu{
   background: #121212;
 }
