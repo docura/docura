@@ -30,6 +30,10 @@
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
+:root[data-color="dark"] .btn-buymeacoffee, :root[data-color="night"] .btn-buymeacoffee {
+  box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
 .btn-close {
   background: var(--background-fg);
   border: 1px dotted var(--border-color);
