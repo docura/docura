@@ -15,7 +15,7 @@ githubRepo = 'your/repo'
 githubSponsorURL = 'https://github.com/sponsors/'
 buyMeACoffeeURL = 'https://www.buymeacoffee.com/'
 
-googleAdSense = 'ca-pub-xxxxxxxxxxxxxxxx'
+#googleAdSense = 'ca-pub-xxxxxxxxxxxxxxxx'
 
 [algolia]
 [algolia.en]
