@@ -224,7 +224,6 @@ main {
     overflow-x: auto;
     background: var(--background);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
   }
 
   :root[data-color="dark"] #toc, :root[data-color="night"] #toc {
@@ -236,6 +235,18 @@ main {
     display: flex;
     flex-direction: column;
     padding-left: 16px;
+    z-index: 10;
+    cursor: default;
+  }
+
+  .offcanvas-toc-on:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
   }
 
   .offcanvas-toc-on #toc .btn-close {
@@ -267,7 +278,6 @@ main {
     overflow-x: auto;
     background: var(--background);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
   }
 
   :root[data-color="dark"] #sidebar, :root[data-color="night"] #sidebar {
@@ -278,6 +288,18 @@ main {
     animation: slide-in-left .3s forwards;
     display: flex;
     flex-direction: column;
+    z-index: 10;
+    cursor: default;
+  }
+
+  .offcanvas-sidebar-on:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
   }
 
   .offcanvas-sidebar-on #sidebar .btn-close {
@@ -305,6 +327,17 @@ main {
     white-space: nowrap;
     gap: 6px;
   }
+}
+
+body.offcanvas-sidebar-on, body.offcanvas-toc-on {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.offcanvas-sidebar-on:before, .offcanvas-toc-on:before {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 @keyframes slide-in-left {
