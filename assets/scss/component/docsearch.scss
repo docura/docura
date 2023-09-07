@@ -5,7 +5,7 @@
   --docsearch-icon-stroke-width: 1.4;
   --docsearch-highlight-color: var(--docsearch-primary-color);
   --docsearch-muted-color: #969faf;
-  --docsearch-container-background: rgba(101, 108, 133, 0.8);
+  --docsearch-container-background: rgba(255, 255, 255, 0.1);
   --docsearch-logo-color: #5468ff;
   --docsearch-modal-width: 560px;
   --docsearch-modal-height: 600px;
@@ -23,7 +23,6 @@
 }
 
 :root[data-color="dark"] {
-  --docsearch-container-background: rgba(9, 10, 17, 0.8);
   --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40, 0 3px 8px 0 #000309;
   --docsearch-searchbox-focus-background: #000;
   --docsearch-hit-color: #bec3c9;
@@ -34,7 +33,6 @@
 }
 
 :root[data-color="night"] {
-  --docsearch-container-background: rgba(9, 10, 17, 0.8);
   --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40, 0 3px 8px 0 #000309;
   --docsearch-searchbox-focus-background: #000;
   --docsearch-hit-color: #bec3c9;
@@ -132,7 +130,9 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 200
+  z-index: 200;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .DocSearch-Container a {
