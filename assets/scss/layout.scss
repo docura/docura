@@ -336,8 +336,8 @@ body.offcanvas-sidebar-on, body.offcanvas-toc-on {
 
 .offcanvas-sidebar-on:before, .offcanvas-toc-on:before {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
 }
 
 @keyframes slide-in-left {
