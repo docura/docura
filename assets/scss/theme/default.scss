@@ -22,6 +22,8 @@
 
   --home-cover-background: linear-gradient(135deg, rgba(79, 113, 235, 0.2) 9.8%, rgba(232, 79, 235, 0.2) 92.84%);
 
+  --icon-filter: invert(41%) sepia(19%) saturate(840%) hue-rotate(161deg) brightness(92%) contrast(92%);
+
   /* base16 tomorrow */
   --chroma-base00: #f9f9f9;
   --chroma-base01: #e0e0e0;
@@ -42,7 +44,7 @@
 }
 
 :root[data-color="dark"] {
-  --background: #121212;
+  --background: #1f1f1b;
   --color: #efefef;
   --color2: #ffffff;
   --color3: #b3b3b3;
@@ -50,6 +52,8 @@
   --background-fg: #333333;
   --background-fg2: #1f1f1f;
   --border-color: rgba(255, 255, 255, .4);
+
+  --icon-filter: invert(83%) sepia(0%) saturate(1582%) hue-rotate(126deg) brightness(86%) contrast(80%);
 
   /* base16 tomorrow night */
   --chroma-base00: #080808;
@@ -80,6 +84,8 @@
   --background-fg2: #303030;
   --border-color: rgba(255, 255, 255, 0.2);
 
+  --icon-filter: invert(60%) sepia(25%) saturate(20%) hue-rotate(343deg) brightness(98%) contrast(94%);
+
   /* base16 twilight */
   --chroma-base00: #1e1e1e;
   --chroma-base01: #323537;
@@ -99,14 +105,6 @@
   --chroma-base0F: #9b703f;
 }
 
-:root[data-color="light"] .icon:not(.icon-colored) {
-  filter: invert(30%) sepia(24%) saturate(758%) hue-rotate(160deg) brightness(89%) contrast(90%);
-}
-
-:root[data-color="dark"] .icon:not(.icon-colored) {
-  filter: invert(97%) sepia(0%) saturate(3231%) hue-rotate(294deg) brightness(118%) contrast(87%);
-}
-
-:root[data-color="night"] .icon:not(.icon-colored) {
-  filter: invert(100%) sepia(2%) saturate(1090%) hue-rotate(294deg) brightness(83%) contrast(92%);
+.icon:not(.icon-colored) {
+  filter: var(--icon-filter);
 }

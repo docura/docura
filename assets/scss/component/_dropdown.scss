@@ -23,8 +23,9 @@
   min-width: 100px;
   max-height: 240px;
   overflow-x: auto;
+  background: var(--background-fg);
+  color: var(--color3);
   border: 1px solid var(--border-color);
-  background: white;
   z-index: 1;
   border-radius: 6px;
   padding: 3px;
@@ -45,21 +46,5 @@
 }
 
 .dropdown-menu button:hover, .dropdown-menu a:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-:root[data-color="dark"] .dropdown-menu button:hover, .dropdown-menu a:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-:root[data-color="night"] .dropdown-menu button:hover, .dropdown-menu a:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-:root[data-color="dark"] .dropdown-menu{
-  background: #121212;
-}
-
-:root[data-color="night"] .dropdown-menu {
-  background: #333333;
+  background: var(--background-fg2);
 }
