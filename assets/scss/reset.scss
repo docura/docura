@@ -1,7 +1,7 @@
-/* https://github.com/elad2412/the-new-css-reset v1.7.2 */
+/* https://github.com/elad2412/the-new-css-reset v1.11 */
 /* custom styles for: pre, code */
 
-*:where(:not(html, iframe, canvas, img, svg, video, pre, code):not(svg *, symbol *)) {
+*:where(:not(html, iframe, canvas, img, svg, video, audio, pre, code):not(svg *, symbol *)) {
   all: unset;
   display: revert;
 }
@@ -10,6 +10,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 a, button {
@@ -21,7 +27,8 @@ ol, ul, menu {
 }
 
 img {
-  max-width: 100%;
+  max-inline-size: 100%;
+  max-block-size: 100%;
 }
 
 table {
@@ -41,8 +48,17 @@ meter {
   appearance: revert;
 }
 
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
 ::placeholder {
   color: unset;
+}
+
+::marker {
+  content: initial;
 }
 
 :where([hidden]) {
@@ -59,6 +75,11 @@ meter {
 
 :where([draggable="true"]) {
   -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
 }
 
 pre, code {
