@@ -18,8 +18,10 @@
 @import "component/dropdown";
 @import "component/chroma";
 
-body{
+html {
   font-family: var(--font-family);
   background: var(--background);
   color: var(--color);
+  scroll-behavior: smooth;
+  scroll-padding: 2em;
 }
