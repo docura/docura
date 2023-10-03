@@ -46,5 +46,12 @@
 
 #site-header-search {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+}
+
+/* From Small Tablet */
+@media (min-width: 768px) {
+  #site-header-search {
+    align-items: center;
+  }
 }
