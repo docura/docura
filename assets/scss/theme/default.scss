@@ -20,7 +20,7 @@
 
   --blur: 10px;
 
-  --home-cover-background: linear-gradient(135deg, rgba(79, 113, 235, 0.2) 9.8%, rgba(232, 79, 235, 0.2) 92.84%);
+  --home-cover-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,250,1) 25%, rgba(214,219,220,1) 50%, rgba(255,255,250,1) 75%, rgba(255,255,255,1) 100%);
 
   --icon-filter: invert(41%) sepia(19%) saturate(840%) hue-rotate(161deg) brightness(92%) contrast(92%);
 
@@ -53,6 +53,8 @@
   --background-fg2: #1f1f1f;
   --border-color: rgba(255, 255, 255, .4);
 
+  --home-cover-background: radial-gradient(circle, rgba(23,23,25,1) 0%, rgba(18,18,0,1) 25%, rgba(32,32,32,1) 50%, rgba(18,18,0,1) 75%, rgba(23,23,25,1) 100%);
+
   --icon-filter: invert(83%) sepia(0%) saturate(1582%) hue-rotate(126deg) brightness(86%) contrast(80%);
 
   /* base16 tomorrow night */
@@ -83,6 +85,8 @@
   --background-fg: #444444;
   --background-fg2: #303030;
   --border-color: rgba(255, 255, 255, 0.2);
+
+  --home-cover-background: radial-gradient(circle, rgba(52,52,52,1) 0%, rgba(42,42,42,1) 25%, rgba(57,57,57,1) 50%, rgba(42,42,42,1) 75%, rgba(52,52,52,1) 100%);
 
   --icon-filter: invert(60%) sepia(25%) saturate(20%) hue-rotate(343deg) brightness(98%) contrast(94%);
 
