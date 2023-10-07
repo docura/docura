@@ -19,3 +19,10 @@
       });
   </script>
 {{ end }}
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?{{ now.Format "2006-01-02" }}')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
