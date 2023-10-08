@@ -11,12 +11,15 @@
 }
 
 #site-header-menu {
-  width: 100%;
-  overflow: auto;
   padding: 0 12px;
   display: flex;
   align-items: center;
   color: var(--color3);
+}
+
+#site-header-menu nav {
+  width: 100%;
+  overflow: auto;
 }
 
 #site-header-menu ul {
@@ -30,6 +33,7 @@
   display: flex;
   padding: 12px 6px;
   gap: 3px;
+  white-space: nowrap;
 }
 
 #site-header-menu a:focus, #site-header-menu a:hover, #site-header-menu a.active {
