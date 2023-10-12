@@ -4,8 +4,10 @@ if (fromLargeTablet && tocSticky) {
     window.addEventListener("scroll", function () {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             tocSticky.style.top = "20px";
+            tocSticky.style.bottom = "65px";
         } else {
             tocSticky.style.top = null;
+            tocSticky.style.bottom = null;
         }
     });
 }
