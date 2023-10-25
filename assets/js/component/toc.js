@@ -10,20 +10,36 @@ if (fromLargeTablet && tocSticky) {
     });
 }
 
-function updateActiveClasses() {
-    const headers = document.querySelectorAll('#article h2, #article h3');
-    const links = document.querySelectorAll('#TableOfContents a');
+if ('IntersectionObserver' in window) {
+    document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('#TableOfContents a');
+        let activeLink = null;
+        const linksById = {};
 
-    for (let i = 0; i < headers.length; i++) {
-        const rect = headers[i].getBoundingClientRect();
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (activeLink) {
+                        activeLink.classList.remove('active');
+                    }
 
-        if (rect.top >= 0 && rect.top <= window.innerHeight) {
-            links[i].classList.add('active');
-        } else {
-            links[i].classList.remove('active');
-        }
-    }
+                    activeLink = linksById[entry.target.id];
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        }, {rootMargin: `0% 0% -80% 0%`});
+
+        links.forEach(link => {
+            const id = link.getAttribute('href') ? link.getAttribute('href').slice(1) : null; // Checking if href exists before slicing #
+            if (id) {
+                const target = document.getElementById(id);
+                if (target) {
+                    linksById[id] = link;
+                    observer.observe(target);
+                }
+            }
+        });
+    });
 }
-window.addEventListener('load', updateActiveClasses);
-window.addEventListener('resize', updateActiveClasses);
-window.addEventListener('scroll', updateActiveClasses);
