@@ -24,7 +24,8 @@
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: var(--border-color);
+  background: var(--background);
+  box-shadow: var(--box-shadow);
   border-radius: 50%;
   position: relative;
   left: -13.5px;

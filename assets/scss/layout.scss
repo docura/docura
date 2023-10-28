@@ -258,7 +258,7 @@ main {
 
   #article-nav-toc-btn {
     display: flex;
-    border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow2);
     border-radius: 6px;
     padding: 6px;
     cursor: pointer;
@@ -317,11 +317,12 @@ main {
     justify-content: space-between;
     height: var(--site-header-height);
     align-items: center;
+    padding: 0 2px;
   }
 
   #article-nav-menu-btn {
     display: flex;
-    border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow2);
     border-radius: 6px;
     padding: 6px;
     cursor: pointer;

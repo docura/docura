@@ -36,7 +36,8 @@
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: var(--border-color);
+  background: var(--background);
+  box-shadow: var(--box-shadow);
   position: relative;
   left: -10.5px;
   top: -3px;
