@@ -12,9 +12,9 @@ githubURL = 'https://github.com/'
 youtubeURL = 'https://www.youtube.com/'
 
 githubRepo = 'your/repo'
-githubSponsorURL = 'https://github.com/sponsors/'
-buyMeACoffeeURL = 'https://www.buymeacoffee.com/'
 
+buyMeACoffee = ''
+githubSponsor = ''
 #googleAdSense = 'ca-pub-xxxxxxxxxxxxxxxx'
 
 [algolia]

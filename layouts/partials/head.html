@@ -15,4 +15,8 @@
 {{ partial "favicons" . }}
 {{ partial "head-meta-theme-colors" . }}
 {{ partial "analytics" . }}
-{{ partial "adsense" . }}
+
+{{ if not .IsHome }}
+  {{ partial "buy-me-a-coffee-widget" . }}
+  {{ partial "adsense" . }}
+{{ end }}

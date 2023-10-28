@@ -38,14 +38,14 @@
   <!-- fund -->
   <div id="site-footer-fund">
 
-    {{with .Site.Params.githubSponsorURL}}
-    <a href="{{.}}" class="btn-github" target="_blank" aria-label="github sponsor url">
+    {{if .Site.Params.githubSponsor}}
+    <a href="https://github.com/sponsors/{{ .Site.Params.githubSponsor }}" class="btn-github" target="_blank" aria-label="github sponsor url">
       <i class="icon icon-github icon-colored"></i> Sponsor
     </a>
     {{end}}
 
-    {{with .Site.Params.buyMeACoffeeURL}}
-    <a href="{{.}}" class="btn-buymeacoffee" target="_blank" aria-label="buy me a coffee url"></a>
+    {{if .Site.Params.buyMeACoffee}}
+    <a href="https://www.buymeacoffee.com/{{ .Site.Params.buyMeACoffee }}" class="btn-buymeacoffee" target="_blank" aria-label="buy me a coffee url"></a>
     {{end}}
 
   </div>
