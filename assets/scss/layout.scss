@@ -206,6 +206,12 @@ main {
     flex-direction: column;
   }
 
+  #sidebar .sticky {
+    position: fixed;
+    left: 0;
+    width: 20%;
+  }
+
   #toc .sticky {
     position: fixed;
     right: 0;

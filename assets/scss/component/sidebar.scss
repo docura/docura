@@ -1,5 +1,12 @@
 #sidebar {
+  padding: 40px 0;
+}
+
+#sidebar .sticky {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
+  overflow: auto;
 }
 
 .sidebar-section, .sidebar-link {
@@ -10,6 +17,10 @@
   margin-top: 40px;
   font-weight: 600;
   color: var(--color2)
+}
+
+#sidebar .sidebar-section:first-child {
+  margin-top: 0;
 }
 
 .sidebar-link {
