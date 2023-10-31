@@ -1,7 +1,8 @@
 description = 'A modular Hugo theme to build your next documentation site'
 
-author = 'Your Name'
-authorURL = 'https://your-site.com/'
+[author]
+name= 'Your Name'
+URL = 'https://your-site.com/'
 
 currentYear = 2023
 # projectStartYear = 2020
