@@ -1,9 +1,5 @@
 description = 'A modular Hugo theme to build your next documentation site'
 
-[author]
-name= 'Your Name'
-URL = 'https://your-site.com/'
-
 currentYear = 2023
 # projectStartYear = 2020
 
@@ -17,6 +13,10 @@ githubRepo = 'your/repo'
 buyMeACoffee = ''
 githubSponsor = ''
 #googleAdSense = 'ca-pub-xxxxxxxxxxxxxxxx'
+
+[author]
+name= 'Your Name'
+URL = 'https://your-site.com/'
 
 [algolia]
 [algolia.en]
