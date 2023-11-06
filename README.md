@@ -27,20 +27,3 @@ A modular Hugo theme to build your next documentation site
     echo "theme = 'docura'" >> config/_default/config.toml
     hugo server
     ```
-
-### Via Module
-
-You can also add this theme as a Hugo module instead of a git submodule.
-Navigate to your hugo project root and edit your `config.toml`:
-
-```toml
-[module]
-[[module.imports]]
-path = 'github.com/docura/docura'
-```
-
-Then, to load/update the theme module, run:
-
-```shell
-hugo mod get -u
-```
