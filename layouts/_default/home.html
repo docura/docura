@@ -5,13 +5,14 @@
       <h1>{{ .Site.Title }}</h1>
       <h2>{{ .Site.Params.description }}</h2>
 
-      {{ with .Site.Params.githubRepos }}
-        {{ partial "github-repos-grid" . }}
+      {{ with .Site.Params.home.repository }}
+        {{ partial "github-buttons" . }}
       {{ else }}
-        {{ with .Site.Params.githubRepo }}
-          {{ partial "github-buttons" . }}
+        {{ with .Site.Params.home.repositories }}
+          {{ partial "github-repos-grid" . }}
         {{ end }}
       {{ end }}
+
     </section>
   </main>
 </div>
