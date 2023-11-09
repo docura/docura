@@ -1,5 +1,4 @@
 theme: docura
-description: Your Site Description
 
 enableGitInfo: true
 
@@ -21,6 +20,7 @@ languages:
     languageCode: en-US
     contentDir: content/en
     title: Your Site Name
+    description: Your Site Description
     weight: 1
 
 params:
