@@ -1,0 +1,88 @@
+theme: docura
+description: Your Site Description
+
+enableGitInfo: true
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+services:
+  googleAnalytics:
+    ID: G-xxxxxxxxxx
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    languageCode: en-US
+    contentDir: content/en
+    title: Your Site Name
+    weight: 1
+
+params:
+
+  author:
+    name: Your Name
+    url: https://your.site
+
+  themeColors:
+    light: '#ffffff'
+    dark: '#121212'
+
+  years:
+    start: ''
+    present: 2023
+
+  social:
+    github: ''
+    youtube: ''
+    facebook: ''
+    x: ''
+
+  ads:
+    googleAdSense: ''
+
+  donate:
+    buyMeACoffee: ''
+    githubSponsor: ''
+
+  algolia:
+    en:
+      container: '#site-header-search'
+      appId: 'docura'
+      indexName: 'docura'
+      apiKey: ''
+
+  home:
+
+    repository: 'your/repo'
+
+#    repositories:
+#      - name: Website
+#        repo: org/site
+#        icon: "<i class='icon icon-book'></i>"
+#        description: The repository of the website
+#
+#      - name: Code
+#        repo: org/project
+#        icon: "<i class='icon icon-book'></i>"
+#        description: The repository of the project
+
+menu:
+  main:
+
+    - url: /
+      name: Home
+      identifier: home
+      pre: "<i class='icon icon-home'></i>"
+      weight: 1
+
+    - url: /docs
+      name: Documentation
+      identifier: docs
+      pre: "<i class='icon icon-book'></i>"
+      weight: 2
