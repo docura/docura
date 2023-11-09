@@ -53,8 +53,8 @@ params:
   algolia:
     en:
       container: '#site-header-search'
-      appId: 'docura'
-      indexName: 'docura'
+      appId: ''
+      indexName: ''
       apiKey: ''
 
   home:
