@@ -23,7 +23,6 @@ A modular Hugo theme to build your next documentation site
     cd newsite
     git init
     git submodule add https://github.com/docura/docura.git themes/docura
-    rm config.toml && cp -r themes/docura/config .
-    echo "theme = 'docura'" >> config/_default/config.toml
+    rm hugo.toml && cp themes/docura/hugo.yaml .
     hugo server
     ```
