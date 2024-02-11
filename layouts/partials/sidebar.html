@@ -3,18 +3,21 @@
 {{- $url := split .Permalink "/" -}}
 {{- $urlPageSlug := index $url (sub (len $url) 2) -}}
 
+{{ $currentLang := .Site.Language.Lang }}
+{{ $defaultLang := .Sites.First.Language.Lang }}
+
 <aside id="sidebar">
   <span class="btn-close"><i class="icon icon-close"></i></span>
 
   <div class="sticky">
-    {{- range $group := $data -}}
+	{{- range $group := $data -}}
       <strong class="sidebar-section">{{ $group.title }}</strong>
 
       {{- range $index, $page := $group.pages -}}
         {{- $pageSlug := $page.title | urlize -}}
         {{- $isActivePage := eq $urlPageSlug $pageSlug -}}
 
-        {{ if eq .Site.Language.Lang .Site.DefaultContentLanguage }}
+        {{ if eq $currentLang $defaultLang }}
           {{ $href := printf "/%s/%s/" $.Section $pageSlug }}
           <a class="sidebar-link {{ if $isActivePage }}current{{ end }}" href="{{ $href }}">
             {{ if and (eq $index 0) $group.replaceFirstPageTitle }}
