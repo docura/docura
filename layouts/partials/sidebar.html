@@ -4,7 +4,7 @@
 {{- $urlPageSlug := index $url (sub (len $url) 2) -}}
 
 {{ $currentLang := .Site.Language.Lang }}
-{{ $defaultLang := .Sites.First.Language.Lang }}
+{{ $defaultLang := .Sites.Default.Language.Lang }}
 
 <aside id="sidebar">
   <span class="btn-close"><i class="icon icon-close"></i></span>
