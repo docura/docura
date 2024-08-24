@@ -1,9 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{{ .Page.Params.description | default .Site.Params.description | markdownify }}">
+  <meta name="description" content="{{ .Page.Params.description | default .Site.Params.description | .RenderString }}">
 <meta name="author" content="{{ .Site.Params.author.name }}">
 
-<title>{{ if .IsHome }}{{ .Site.Title | markdownify }} · {{ .Site.Params.description | markdownify }}{{ else }}{{ .Title | markdownify }} · {{ .Site.Title | markdownify }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ .Site.Title | .RenderString }} · {{ .Site.Params.description | .RenderString }}{{ else }}{{ .Title | .RenderString }} · {{ .Site.Title | .RenderString }}{{ end }}</title>
 
 <link rel="canonical" href="{{ .Permalink }}">
 
