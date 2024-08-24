@@ -2,26 +2,28 @@ theme: docura
 
 enableGitInfo: true
 
+defaultContentLanguage: en
+
+languages:
+  en:
+    weight: 1
+    languageName: English
+    languageCode: en-US
+    contentDir: content/en
+    title: Your Site Name
+    params:
+      description: Your Site Description
+
+services:
+  googleAnalytics:
+    ID: G-XXXXXXXXXX
+
 markup:
   highlight:
     noClasses: false
   goldmark:
     renderer:
       unsafe: true
-
-services:
-  googleAnalytics:
-    ID: G-xxxxxxxxxx
-
-defaultContentLanguage: en
-languages:
-  en:
-    languageName: English
-    languageCode: en-US
-    contentDir: content/en
-    title: Your Site Name
-    description: Your Site Description
-    weight: 1
 
 params:
 
