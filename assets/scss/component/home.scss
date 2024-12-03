@@ -79,52 +79,68 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  .github-repos-grid {
-    flex-direction: row;
-    width: 80%;
-    padding-top: 4em;
-    gap: 0;
-  }
+@media (min-width: 360px) {
 
-  .github-repo-tile {
-    width: 50%;
-  }
+    .cover h1 {
+        font-family: var(--font-family-brand);
+        font-size: 2em;
+        text-align: center;
+    }
 }
 
-@media (min-width: 1024px) {
-  .github-repos-grid {
-    width: 60%;
-    padding-top: 6em;
-  }
+    @media (min-width: 768px) {
 
-  .github-repo-tile .icon {
-    width: 100px;
-    height: 100px;
-    background-size: 6.25em;
-  }
-}
+        .cover h1 {
+            font-family: var(--font-family-brand);
+            font-size: 4em;
+            text-align: center;
+        }
 
-@media (min-width: 1281px) {
-  .github-repos-grid {
-    width: 50%;
-  }
+        .github-repos-grid {
+            flex-direction: row;
+            width: 80%;
+            padding-top: 4em;
+            gap: 0;
+        }
 
-  .github-repo-tile .icon {
-    width: 120px;
-    height: 120px;
-    background-size: 7.5em;
-  }
-}
+        .github-repo-tile {
+            width: 50%;
+        }
+    }
 
-@media (min-width: 1920px) {
-  .github-repos-grid {
-    width: 40%;
-  }
+    @media (min-width: 1024px) {
+        .github-repos-grid {
+            width: 60%;
+            padding-top: 6em;
+        }
 
-  .github-repo-tile .icon {
-    width: 160px;
-    height: 160px;
-    background-size: 10em;
-  }
-}
+        .github-repo-tile .icon {
+            width: 100px;
+            height: 100px;
+            background-size: 6.25em;
+        }
+    }
+
+    @media (min-width: 1281px) {
+        .github-repos-grid {
+            width: 50%;
+        }
+
+        .github-repo-tile .icon {
+            width: 120px;
+            height: 120px;
+            background-size: 7.5em;
+        }
+    }
+
+    @media (min-width: 1920px) {
+        .github-repos-grid {
+            width: 40%;
+        }
+
+        .github-repo-tile .icon {
+            width: 160px;
+            height: 160px;
+            background-size: 10em;
+        }
+    }

@@ -9,29 +9,30 @@
   <!-- social -->
   <div id="site-footer-social">
 
-    {{with .Site.Params.social.facebook}}
-    <a href="htts://facebook.com/{{.}}" target="_blank" aria-label="facebook url">
-      <i class="icon icon-facebook icon-colored"></i>
-    </a>
-    {{end}}
+      {{with .Site.Params.social.github}}
+      <a href="https://github.com/{{.}}" target="_blank" aria-label="github url">
+          <i class="icon icon-github icon-colored"></i>
+      </a>
+      {{end}}
 
-    {{with .Site.Params.social.x}}
-    <a href="https://twitter.com/{{.}}" target="_blank" aria-label="twitter url">
-      <i class="icon icon-twitter icon-colored"></i>
-    </a>
-    {{end}}
+      {{with .Site.Params.social.substack}}
+      <a href="https://substack.com/{{.}}" target="_blank" aria-label="substack url">
+          <i class="icon icon-substack"></i>
+      </a>
+      {{end}}
 
-    {{with .Site.Params.social.github}}
-    <a href="https://github.com/{{.}}" target="_blank" aria-label="github url">
-      <i class="icon icon-github icon-colored"></i>
-    </a>
-    {{end}}
+      {{with .Site.Params.social.bluesky}}
+      <a href="https://bsky.app/profile/{{.}}" target="_blank" aria-label="bluesky url">
+          <i class="icon icon-bluesky"></i>
+      </a>
+      {{end}}
 
-    {{with .Site.Params.social.youtube}}
-    <a href="http://youtube.com/{{.}}" target="_blank" aria-label="youtube url">
-      <i class="icon icon-youtube icon-colored"></i>
-    </a>
-    {{end}}
+
+      {{with .Site.Params.social.youtube}}
+      <a href="https://youtube.com/{{.}}" target="_blank" aria-label="youtube url">
+          <i class="icon icon-youtube icon-colored"></i>
+      </a>
+      {{end}}
 
   </div>
 

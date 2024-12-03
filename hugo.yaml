@@ -10,9 +10,9 @@ languages:
     languageName: English
     languageCode: en-US
     contentDir: content/en
-    title: Your Site Name
+    title: THE STRUGGLE TO INCREASE CONFIDENCE IN AMERICAN MEDICAL DECISION MAKING
     params:
-      description: Your Site Description
+      description: Master of Liberal Arts Thesis
 
 services:
   googleAnalytics:
@@ -28,8 +28,8 @@ markup:
 params:
 
   author:
-    name: Your Name
-    url: https://your.site
+    name: Daniel Loftus
+    url: https://www.danielloftus.com
 
   themeColors:
     light: '#ffffff'
@@ -37,13 +37,13 @@ params:
 
   years:
     start: ''
-    present: 2023
+    present: 2024
 
   social:
-    github: ''
-    youtube: ''
-    facebook: ''
-    x: ''
+    github: 'DanielLoftus'
+    youtube: '@teknikalspeek'
+    bluesky: 'dtloftus.bsky.social'
+    substack: '@danielloftuswrites'
 
   ads:
     googleAdSense: ''
