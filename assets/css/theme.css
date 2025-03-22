@@ -1,6 +1,3 @@
-@import "../font/inter";
-@import "../icon/default";
-
 :root {
   --font-family: 'Inter', sans-serif;
   --font-family-brand: 'Times', serif;
