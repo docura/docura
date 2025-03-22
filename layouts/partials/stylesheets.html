@@ -1,21 +1,14 @@
-{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
-
-{{ $homeStyle := resources.Get "scss/home.scss" | css.Sass $options }}
-{{ $baseStyle := resources.Get "scss/base.scss" | css.Sass $options }}
-
 {{ if .IsHome }}
-<link rel="stylesheet" href="{{ $homeStyle.RelPermalink }}" integrity="{{ $homeStyle.Data.integrity }}">
-<link rel="preload" href="{{ $baseStyle.RelPermalink }}" as="style" onload="this.rel='stylesheet'" integrity="{{ $baseStyle.Data.integrity }}">
+  {{- $css := slice (resources.Get "css/reset.css") (resources.Get "css/theme.css") (resources.Get "css/layout.css") (resources.Get "css/layout-site-header.css") (resources.Get "css/layout-site-footer.css") (resources.Get "css/home/home.css") (resources.Get "css/font.css") (resources.Get "css/icon.css") (resources.Get "css/component/button.css") (resources.Get "css/component/dropdown.css") | resources.Concat "assets/css/home.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.integrity }}">
 {{ else }}
-<link rel="stylesheet" href="{{ $baseStyle.RelPermalink }}" integrity="{{ $baseStyle.Data.integrity }}">
+  {{- $css := slice (resources.Get "css/reset.css") (resources.Get "css/theme.css") (resources.Get "css/layout.css") (resources.Get "css/layout-site-header.css") (resources.Get "css/layout-site-footer.css") (resources.Get "css/docs/article.css") (resources.Get "css/docs/sidebar.css") (resources.Get "css/docs/toc.css") (resources.Get "css/font.css") (resources.Get "css/icon.css") (resources.Get "css/component/button.css") (resources.Get "css/component/dropdown.css") (resources.Get "css/component/chroma.css") | resources.Concat "assets/css/docs.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.integrity }}">
 {{ end }}
-
-{{ $themeStyle := resources.Get "scss/theme/default.scss" | css.Sass $options }}
-<link rel="stylesheet" href="{{ $themeStyle.RelPermalink }}" integrity="{{ $themeStyle.Data.integrity }}">
 
 {{ $algolia := index .Site.Params.algolia .Site.Language.Lang }}
 {{ if $algolia }}
   <link rel="preconnect" href="https://{{ $algolia.appId }}-dsn.algolia.net" crossorigin />
-  {{ $docsearchStyle := resources.Get "scss/component/docsearch.scss" | css.Sass $options }}
+  {{ $docsearchStyle := resources.Get "css/component/docsearch.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $docsearchStyle.RelPermalink }}" integrity="{{ $docsearchStyle.Data.integrity }}"/>
 {{ end }}

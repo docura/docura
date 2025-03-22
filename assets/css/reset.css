@@ -1,4 +1,4 @@
-/* https://github.com/elad2412/the-new-css-reset v1.11 */
+/* https://github.com/elad2412/the-new-css-reset v1.11.1 */
 /* custom styles for: pre, code */
 
 *:where(:not(html, iframe, canvas, img, svg, video, audio, pre, code):not(svg *, symbol *)) {
@@ -22,7 +22,7 @@ a, button {
   cursor: revert;
 }
 
-ol, ul, menu {
+ol, ul, menu, summary {
   list-style: none;
 }
 
@@ -84,4 +84,8 @@ meter {
 
 pre, code {
   margin: 0;
+}
+
+::-webkit-details-marker {
+  display: none;
 }
