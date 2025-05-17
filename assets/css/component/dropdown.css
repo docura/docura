@@ -24,7 +24,7 @@
   min-width: 100px;
   max-height: 240px;
   overflow-x: auto;
-  background: var(--background);
+  background-color: var(--background);
   color: var(--color3);
   box-shadow: var(--box-shadow2);
   z-index: 1;
